@@ -2,6 +2,8 @@ import Head from "next/head";
 import packageJson from "../package.json";
 
 export default function Home(props) {
+  const { liff, liffError } = props;
+  console.log(liff.getVersion());
   /** You can access to liff and liffError object through the props.
    *  const { liff, liffError } = props;
    *  console.log(liff.getVersion());
